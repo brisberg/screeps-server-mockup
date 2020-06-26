@@ -1,10 +1,10 @@
 {
-  "name": "screeps-server-mockup",
+  "name": "@brisberg/screeps-server-mockup",
+  "main": "./dist/src/main.js",
+  "types": "./dist/src/main.d.ts",
   "license": "MIT",
   "repository": "https://github.com/screepers/screeps-server-mockup",
-  "version": "1.5.1",
-  "main": "dist/src/main.js",
-  "types": "dist/src/main.d.ts",
+  "version": "1.6.1",
   "scripts": {
     "build": "tsc",
     "coverage": "yarn run build && nyc mocha dist/test --ui tdd --exit",
@@ -19,6 +19,7 @@
     "dist/utils"
   ],
   "dependencies": {
+    "@screeps/common": "github:brisberg/common#no-storage-restart",
     "@types/fs-extra-promise": "^1.0.8",
     "@types/lodash": "^4.14.149",
     "@types/screeps": "^3.0.0",
