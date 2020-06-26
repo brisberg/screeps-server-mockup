@@ -7,7 +7,7 @@ import * as _ from 'lodash';
 import * as path from 'path';
 import World from './world';
 
-const common = require('@brisberg/common');
+const common = require('@screeps/common');
 const driver = require('@screeps/driver');
 
 const ASSETS_PATH = path.join(__dirname, '..', '..', 'assets');
@@ -181,7 +181,7 @@ export default class ScreepsServer extends EventEmitter {
     */
     async start() {
         // eslint-disable-next-line global-require
-        this.emit('info', `Server version ${require('screeps').version}`);
+        // this.emit('info', `Server version ${require('screeps').version}`);
         if (!this.connected) {
             await this.connect();
         }

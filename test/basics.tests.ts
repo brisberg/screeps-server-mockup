@@ -5,10 +5,10 @@ import * as path from 'path';
 import ScreepsServer, { ScreepServerOptions } from '../src/screepsServer';
 
 // eslint-disable-next-line import/no-unresolved
-const stdHooks = require('../../utils/stdhooks');
+// const stdHooks = require('../../utils/stdhooks');
 
 // Dirty hack to prevent driver from flooding error messages
-stdHooks.hookWrite();
+// stdHooks.hookWrite();
 
 suite('Basics tests', function () {
     this.timeout(30 * 1000);

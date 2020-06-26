@@ -4,10 +4,10 @@ import * as _ from 'lodash';
 import * as path from 'path';
 import ScreepsServer from '../src/screepsServer';
 
-const stdHooks = require('../utils/stdhooks');
+// const stdHooks = require('../utils/stdhooks');
 
 // Dirty hack to prevent driver from flooding error messages
-stdHooks.hookWrite();
+// stdHooks.hookWrite();
 
 suite('User tests', function () {
     this.timeout(30 * 1000);
