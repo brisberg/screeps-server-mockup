@@ -7,7 +7,7 @@ import * as _ from 'lodash';
 import * as path from 'path';
 import World from './world';
 
-const common = require('@screeps/common');
+const common = require('@brisberg/common');
 const driver = require('@screeps/driver');
 
 const ASSETS_PATH = path.join(__dirname, '..', '..', 'assets');
@@ -119,6 +119,7 @@ export default class ScreepsServer extends EventEmitter {
             const oldLog = console.log;
             console.log = _.noop; // disable console
             await driver.connect('main');
+            await common.storage._connect();
             console.log = oldLog; // re-enable console
             this.usersQueue = await driver.queue.create('users');
             this.roomsQueue = await driver.queue.create('rooms');

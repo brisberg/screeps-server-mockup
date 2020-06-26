@@ -119,6 +119,14 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@brisberg/common@github:brisberg/common#no-storage-restart":
+  version "2.14.0"
+  resolved "https://codeload.github.com/brisberg/common/tar.gz/27c09c2b5c740954c776d709d4c71346cc239ded"
+  dependencies:
+    eslint "^5.12.1"
+    lodash "^3.10.1"
+    q "^1.4.1"
+
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@istanbuljs/load-nyc-config/-/load-nyc-config-1.0.0.tgz#10602de5570baea82f8afbfa2630b24e7a8cfe5b"
@@ -158,14 +166,6 @@
   version "2.13.2"
   resolved "https://registry.yarnpkg.com/@screeps/common/-/common-2.13.2.tgz#8968172ba3e44323351ba6e270d2c122fccfcdcb"
   integrity sha512-H2PYkU238W2io3Ol8DkWZalSsQqw3LqpV89GbWFwDE/yHAOFmZrxb8Mr8rFPFC4CWDz8qO5kOZ++KcfgArwS5Q==
-  dependencies:
-    eslint "^5.12.1"
-    lodash "^3.10.1"
-    q "^1.4.1"
-
-"@screeps/common@github:brisberg/common#no-storage-restart":
-  version "2.14.0"
-  resolved "https://codeload.github.com/brisberg/common/tar.gz/27c09c2b5c740954c776d709d4c71346cc239ded"
   dependencies:
     eslint "^5.12.1"
     lodash "^3.10.1"
